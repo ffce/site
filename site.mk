@@ -47,8 +47,9 @@ DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
 #		would generate images named like this:
 #			gluon-ff%site_code%-23.42+5-%router_model%.bin
 
-# Allow overriding the release number from the command line
-GLUON_RELEASE ?= 0.99.5
+# Allow overriding the release number from the command line, same as gluon branch.
+GLUON_RELEASE ?= 1.0.1
+GLUON_BRANCH ?= testing
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
