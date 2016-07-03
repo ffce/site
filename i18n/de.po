@@ -23,7 +23,7 @@ msgstr ""
 "kann sich dein Knoten mit dem Celler Mesh-VPN verbinden. Bitte "
 "schicke dazu diesen Schlüssel und den Namen deines Knotens "
 "(<em><%=hostname%></em>) an "
-"<a href=\"mailto:info@freifunk-celle.de\">info@freifunk-celle.de</a>."
+"<a href=\"mailto:keys@freifunk-celle.de\">keys@freifunk-celle.de</a>."
 
 msgid "gluon-config-mode:reboot"
 msgstr ""

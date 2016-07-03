@@ -48,7 +48,7 @@ DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
 #			gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line, same as gluon branch.
-GLUON_RELEASE ?= 1.0.12
+GLUON_RELEASE ?= 1.0.13
 GLUON_BRANCH ?= testing
 
 # Default priority for updates.

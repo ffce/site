@@ -21,7 +21,7 @@ msgstr ""
 "connect to the mesh VPN until the key has been registered on the Freifunk "
 "Celle servers. "
 "To register the key send it together with your node's name (<em><%=hostname%></em>) to "
-"<a href=\"mailto:info@freifunk-celle.de\">info@freifunk-celle.de</a>."
+"<a href=\"mailto:keys@freifunk-celle.de\">keys@freifunk-celle.de</a>."
 
 
 msgid "gluon-config-mode:reboot"
