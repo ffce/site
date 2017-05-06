@@ -7,7 +7,7 @@
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-15 \
 	gluon-alfred \
-	gluon-announced \
+	gluon-respondd \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-contact-info \
@@ -21,7 +21,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-autoupdater \
 	gluon-luci-portconfig \
 	gluon-luci-wifi-config \
-	gluon-luci-private-wifi \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
@@ -48,11 +47,18 @@ DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
 #			gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line, same as gluon branch.
-GLUON_RELEASE ?= 1.0.13
-GLUON_BRANCH ?= testing
+GLUON_RELEASE ?= 1.0.14
+# stable testing experimental
+GLUON_BRANCH ?= stable
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
 
+# Region code required for some images; supported values: us eu
+GLUON_REGION = eu
+
 # Languages to include
 GLUON_LANGS ?= en de
+
+# Build ath10k support
+GLUON_ATH10K_MESH = 11s

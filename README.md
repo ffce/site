@@ -1,3 +1,3 @@
 # freifunk-celle
 
-Site-Konfiguration für das Gluon Image (v2015.1.2) der Freifunk Celle Community.
+Site-Konfiguration für das Gluon Image (v2016.2.5) der Freifunk Celle Community.
