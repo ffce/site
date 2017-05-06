@@ -48,10 +48,17 @@ DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
 
 # Allow overriding the release number from the command line, same as gluon branch.
 GLUON_RELEASE ?= 1.0.14
-GLUON_BRANCH ?= testing
+# stable testing experimental
+GLUON_BRANCH ?= stable
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
 
+# Region code required for some images; supported values: us eu
+GLUON_REGION = eu
+
 # Languages to include
 GLUON_LANGS ?= en de
+
+# Build ath10k support
+GLUON_ATH10K_MESH = 11s
