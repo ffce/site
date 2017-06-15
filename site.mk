@@ -5,9 +5,8 @@
 #		The gluon-mesh-batman-adv-* package must come first because of the dependency resolution
 
 GLUON_SITE_PACKAGES := \
-	gluon-mesh-batman-adv-15 \
 	gluon-alfred \
-	gluon-announced \
+	gluon-respondd \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-contact-info \
@@ -17,12 +16,11 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-mesh-vpn \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
-	gluon-luci-admin \
-	gluon-luci-autoupdater \
-	gluon-luci-portconfig \
-	gluon-luci-wifi-config \
-	gluon-luci-private-wifi \
-	gluon-next-node \
+	gluon-web-admin \
+	gluon-web-autoupdater \
+	gluon-web-network \
+	gluon-web-wifi-config \
+	gluon-mesh-batman-adv-15 \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
 	gluon-setup-mode \
@@ -48,11 +46,18 @@ DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
 #			gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line, same as gluon branch.
-GLUON_RELEASE ?= 1.0.13
+GLUON_RELEASE ?= 1.0.17
+# stable testing experimental
 GLUON_BRANCH ?= testing
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
 
+# Region code required for some images; supported values: us eu
+GLUON_REGION = eu
+
 # Languages to include
 GLUON_LANGS ?= en de
+
+# Build ath10k support
+GLUON_ATH10K_MESH = 11s
